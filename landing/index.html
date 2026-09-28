@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Creative Writing for School Students — Skill Matrix, Almaty</title>
+  <meta name="description" content="A creative writing course for school students at Skill Matrix in Almaty. Students come up with stories, write, edit and discuss their own work — and learn to think clearly and write in their own voice.">
+  <meta name="theme-color" content="#FBF7EF">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Creative Writing for School Students — Skill Matrix">
+  <meta property="og:description" content="Every student has a story worth learning to tell. A creative writing course in Almaty.">
+  <!-- TODO: add og:url and og:image once the site is published -->
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500..700&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&family=Onest:wght@400..700&display=swap">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Icon set, used via <svg><use href="#i-..."/></svg> -->
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-notebook" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3v18M12.5 8h3.5M12.5 12h3.5"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4H6.5A2.5 2.5 0 0 1 4 13.5z"/><path d="M8.5 9h7M8.5 12h4"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3.5l1.9 5.1 5.1 1.9-5.1 1.9L11 17.5l-1.9-5.1L4 10.5l5.1-1.9z"/><path d="M18.5 15.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
+      <symbol id="i-edit" viewBox="0 0 24 24"><path d="M15.5 4.5l4 4L9 19H5v-4z"/><path d="M13 7l4 4M13 20h7"/></symbol>
+      <symbol id="i-timer" viewBox="0 0 24 24"><circle cx="12" cy="13.5" r="7"/><path d="M12 13.5V10M10 3h4M18 6.5l1.5-1.5"/></symbol>
+      <symbol id="i-nib" viewBox="0 0 24 24"><path d="M7 3h10l-1 7-4 11-4-11z"/><path d="M12 12v9"/><circle cx="12" cy="10" r="1.4"/></symbol>
+      <symbol id="i-talk" viewBox="0 0 24 24"><path d="M3.5 6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H9l-3.5 3v-3a2 2 0 0 1-2-2z"/><path d="M15.5 9h3a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2v3l-3.5-3h-3a2 2 0 0 1-2-2v-1"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.5-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.5 12 20 12 20z"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/></symbol>
+      <symbol id="i-abc" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M7 15l2.5-6 2.5 6M7.9 13h3.2M14.5 9v6M14.5 12h2a1.5 1.5 0 0 1 0 3h-2"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.5 5.4 3.5 8.5s-1 5.9-3.5 8.5c-2.5-2.6-3.5-5.4-3.5-8.5s1-5.9 3.5-8.5z"/></symbol>
+      <symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M7 3.5h10M7 20.5h10M8 3.5c0 4 4 5.5 4 8.5s-4 4.5-4 8.5M16 3.5c0 4-4 5.5-4 8.5s4 4.5 4 8.5"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3.5 12.2V4.5a1 1 0 0 1 1-1h7.7l8.3 8.3a1.5 1.5 0 0 1 0 2.1l-6.2 6.2a1.5 1.5 0 0 1-2.1 0z"/><circle cx="8" cy="8" r="1.5"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <!-- TODO: replace the mark and wordmark with the official Skill Matrix logo if needed -->
+      <a class="brand" href="#top" aria-label="Skill Matrix Creative Writing — back to top">
+        <span class="brand__mark" aria-hidden="true"><svg class="icon"><use href="#i-nib"/></svg></span>
+        <span class="brand__text">
+          <span class="brand__name">Skill Matrix</span>
+          <span class="brand__course">Creative Writing</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Page sections">
+        <ul class="site-nav__list">
+          <li><a href="#for-whom">Who it's for</a></li>
+          <li><a href="#skills">What you learn</a></li>
+          <li><a href="#format">Classes</a></li>
+          <li><a href="#works">Student work</a></li>
+          <li><a href="#program">Programme</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn--primary site-nav__cta" href="#apply" data-interest="trial">Book a trial class</a>
+      </nav>
+
+      <a class="btn btn--primary btn--sm site-header__cta" href="#apply" data-interest="trial">Sign up</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="visually-hidden" data-nav-toggle-label>Open menu</span>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">
+            <span>Creative Writing</span>
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            <span>for school students</span>
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            <span>Almaty</span>
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            Every student has a <span class="marker">story</span> worth learning to
+            <span class="scribble">tell<svg class="scribble__line" viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M3 11C45 4 98 3 150 7s104 6 147-2"/></svg></span>
+          </h1>
+
+          <p class="hero__lead">
+            A creative writing course at Skill Matrix for young people with something to say.
+            Students come up with ideas, write, rewrite and discuss their own work —
+            and, step by step, learn to think clearly and write in their own voice.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#apply" data-interest="trial">
+              Sign up
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#for-whom">Learn about the course</a>
+          </div>
+
+          <p class="hero__note hand">
+            <svg class="hero__note-arrow" viewBox="0 0 60 40" aria-hidden="true"><path d="M56 34C40 36 20 30 10 10M10 10l-1 11M10 10l10 4"/></svg>
+            you can start with a consultation
+          </p>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="draft">
+            <div class="draft__paper">
+              <span class="draft__label hand">draft no. 3</span>
+              <p class="draft__line hand"><del>It was an ordinary morning.</del></p>
+              <p class="draft__line hand">That morning the alarm</p>
+              <p class="draft__line hand">stayed silent, and the house</p>
+              <p class="draft__line hand">sounded different: a door</p>
+              <p class="draft__line hand">creaked, a tap <ins>somewhere</ins></p>
+              <p class="draft__line hand">was dripping…</p>
+              <p class="draft__line hand draft__line--faint">I lay still and listened.</p>
+              <span class="draft__margin hand">much better!
+                <svg viewBox="0 0 50 34"><path d="M46 4C34 4 16 8 6 26M6 26l1-10M6 26l9-4"/></svg>
+              </span>
+            </div>
+            <div class="sticky sticky--butter hand">Hero: what do they want? What are they afraid of?</div>
+            <div class="sticky sticky--sky hand">idea → plot →<br>draft → edit</div>
+            <svg class="pencil" viewBox="0 0 200 24">
+              <path class="pencil__body" d="M30 2h150v20H30z"/>
+              <path class="pencil__stripe" d="M30 12h150"/>
+              <path class="pencil__eraser" d="M180 2h14a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4h-14z"/>
+              <path class="pencil__band" d="M172 2h8v20h-8z"/>
+              <path class="pencil__wood" d="M30 2L4 12l26 10z"/>
+              <path class="pencil__lead" d="M11 9.3L4 12l7 2.7z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Who it's for -->
+    <section class="section" id="for-whom" aria-labelledby="for-whom-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="kicker hand">who it's for</p>
+          <h2 id="for-whom-title">For students who love to write — and for those who'd like to give it a try</h2>
+          <p class="section-head__lead">No experience needed. What matters is curiosity — about stories, about words and about your own thoughts.</p>
+        </header>
+
+        <ul class="audience">
+          <li class="audience__card" style="--tint: var(--butter)" data-reveal>
+            <span class="audience__icon"><svg class="icon" aria-hidden="true"><use href="#i-notebook"/></svg></span>
+            <h3>Already writes for fun</h3>
+            <p>Keeps a journal, writes stories in phone notes or poems in the margins of a notebook — and wants to write more, and better.</p>
+          </li>
+          <li class="audience__card" style="--tint: var(--sky)" data-reveal>
+            <span class="audience__icon"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
+            <h3>Wants to express ideas with more confidence</h3>
+            <p>Has plenty to say, but it doesn't come out right on paper or out loud. Here they practise finding precise words and shaping a thought so others can follow it.</p>
+          </li>
+          <li class="audience__card" style="--tint: var(--lilac)" data-reveal>
+            <span class="audience__icon"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg></span>
+            <h3>Loves making things up</h3>
+            <p>Invents worlds, characters and endless “what ifs”. Wants those ideas to turn into finished stories.</p>
+          </li>
+          <li class="audience__card" style="--tint: var(--sage)" data-reveal>
+            <span class="audience__icon"><svg class="icon" aria-hidden="true"><use href="#i-edit"/></svg></span>
+            <h3>Wants to get better at working with text</h3>
+            <p>To understand how good writing is built, edit their own work and notice what works in other people's.</p>
+          </li>
+        </ul>
+
+        <aside class="parents-note" data-reveal>
+          <p class="parents-note__label hand">for parents</p>
+          <p class="parents-note__text">
+            Writing clearly and thinking clearly go hand in hand: to put an idea on paper, you first have to think it through.
+            In this course, writing becomes a tool students use to make sense of their ideas and find the right words for them.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 3. What students learn -->
+    <section class="section section--tinted" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="kicker hand">what students learn</p>
+          <h2 id="skills-title">How a story takes shape — and how to make it stronger</h2>
+          <p class="section-head__lead">Students follow a text all the way through: from the first idea to the final edit and a conversation with readers.</p>
+        </header>
+
+        <ol class="skills">
+          <li class="skill" data-reveal>
+            <span class="skill__num">01</span>
+            <h3>Finding ideas</h3>
+            <p>Where stories come from: observations, memories, overheard phrases. How to tell which idea is yours — and how not to abandon it halfway.</p>
+            <p class="skill__note hand">“what if…?”</p>
+          </li>
+          <li class="skill" data-reveal>
+            <span class="skill__num">02</span>
+            <h3>Building a plot</h3>
+            <p>How a story begins, builds tension and where it leads. Why a hero needs obstacles, and why an ending doesn't have to be a happy one.</p>
+            <p class="skill__note hand">beginning → twist → ending</p>
+          </li>
+          <li class="skill" data-reveal>
+            <span class="skill__num">03</span>
+            <h3>Creating characters</h3>
+            <p>Characters you believe in: with wants, fears, habits and their own way of speaking.</p>
+            <p class="skill__note hand">what do they really want?</p>
+          </li>
+          <li class="skill" data-reveal>
+            <span class="skill__num">04</span>
+            <h3>Language and style</h3>
+            <p>Precise words instead of vague ones, vivid details, the rhythm of a sentence. Finding the voice that makes a piece of writing unmistakably yours.</p>
+            <p class="skill__note hand">show, don't tell</p>
+          </li>
+          <li class="skill" data-reveal>
+            <span class="skill__num">05</span>
+            <h3>Editing</h3>
+            <p>A first draft is only the beginning. Students learn to reread their work through a reader's eyes, cut what isn't needed and rewrite.</p>
+            <p class="skill__note hand">cut: <del>very</del> <del>really</del> <del>just</del></p>
+          </li>
+          <li class="skill" data-reveal>
+            <span class="skill__num">06</span>
+            <h3>Discussion and feedback</h3>
+            <p>Reading each other's work, talking about it kindly and to the point, listening to comments and deciding for yourself what to do with them.</p>
+            <p class="skill__note hand">what worked? what could be stronger?</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. How classes work -->
+    <section class="section section--ink" id="format" aria-labelledby="format-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="kicker hand">how classes work</p>
+          <h2 id="format-title">You learn to write by writing</h2>
+          <p class="section-head__lead">Classes are built around practice: students try each new technique in their own writing straight away, and the teacher supports them at every stage.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step" style="--tint: var(--butter)" data-reveal>
+            <span class="step__icon"><svg class="icon" aria-hidden="true"><use href="#i-timer"/></svg></span>
+            <span class="step__label hand">step 1</span>
+            <h3>Exercises</h3>
+            <p>Short tasks to warm up and try out a new technique — for example, describing a place only through sounds, or starting a story with its final scene.</p>
+          </li>
+          <li class="step" style="--tint: var(--peach)" data-reveal>
+            <span class="step__icon"><svg class="icon" aria-hidden="true"><use href="#i-nib"/></svg></span>
+            <span class="step__label hand">step 2</span>
+            <h3>Their own writing</h3>
+            <p>Everyone works on their own stories: using what they've just learned, experimenting, making mistakes and taking a text all the way to the end.</p>
+          </li>
+          <li class="step" style="--tint: var(--sky)" data-reveal>
+            <span class="step__icon"><svg class="icon" aria-hidden="true"><use href="#i-talk"/></svg></span>
+            <span class="step__label hand">step 3</span>
+            <h3>Discussion</h3>
+            <p>Students read their work aloud and talk it through: what worked, where the reader got lost, what could be stronger.</p>
+          </li>
+          <li class="step" style="--tint: var(--sage)" data-reveal>
+            <span class="step__icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span>
+            <span class="step__label hand">step 4</span>
+            <h3>Teacher support</h3>
+            <p>The teacher helps when an idea won't come or a text gets stuck, and suggests where to take it next.</p>
+          </li>
+        </ol>
+
+        <p class="format-note" data-reveal>
+          Class days and course length are listed under <a href="#program">Programme and schedule</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. Student work -->
+    <section class="section section--board" id="works" aria-labelledby="works-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="kicker hand">from students' notebooks</p>
+          <h2 id="works-title">Student work</h2>
+          <p class="section-head__lead">Short excerpts and stories by course participants will appear here.</p>
+        </header>
+
+        <div class="works">
+          <!--
+            TODO: once you have student work, replace a placeholder card with this
+            (publish only with the consent of the author and their parents):
+
+            <figure class="work" data-reveal>
+              <blockquote class="work__excerpt">
+                <p>Excerpt text…</p>
+              </blockquote>
+              <figcaption class="work__meta">
+                <span class="work__author">Name, age</span>
+                <span class="work__title">“Title”</span>
+              </figcaption>
+            </figure>
+          -->
+          <figure class="work work--placeholder" data-reveal>
+            <div class="work__excerpt">
+              <p class="work__placeholder hand">Space for a short story excerpt</p>
+              <span class="work__lines" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+            </div>
+            <figcaption class="work__meta">
+              <span class="work__author">Author's name, age</span>
+              <span class="work__title">Title</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work work--placeholder" data-reveal>
+            <div class="work__excerpt">
+              <p class="work__placeholder hand">Space for a short sketch</p>
+              <span class="work__lines" aria-hidden="true"><span></span><span></span><span></span></span>
+            </div>
+            <figcaption class="work__meta">
+              <span class="work__author">Author's name, age</span>
+              <span class="work__title">Title</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work work--placeholder" data-reveal>
+            <div class="work__excerpt">
+              <p class="work__placeholder hand">Space for a student's story</p>
+              <span class="work__lines" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+            </div>
+            <figcaption class="work__meta">
+              <span class="work__author">Author's name, age</span>
+              <span class="work__title">Title</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Programme and schedule -->
+    <section class="section" id="program" aria-labelledby="program-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="kicker hand">programme &amp; schedule</p>
+          <h2 id="program-title">Programme and schedule</h2>
+          <p class="section-head__lead">Details of the next intake will appear here. Want to know sooner? Leave a request and we'll go over them during a consultation.</p>
+        </header>
+
+        <!--
+          TODO: replace <span class="tbd">to be announced</span> with the course details,
+          e.g. <dd>12–16 years old</dd>
+        -->
+        <dl class="facts">
+          <div class="fact" data-reveal>
+            <dt><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>Age</dt>
+            <dd><span class="tbd">to be announced</span></dd>
+          </div>
+          <div class="fact" data-reveal>
+            <dt><svg class="icon" aria-hidden="true"><use href="#i-abc"/></svg>English level</dt>
+            <dd><span class="tbd">to be announced</span></dd>
+          </div>
+          <div class="fact" data-reveal>
+            <dt><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>Language of instruction</dt>
+            <dd><span class="tbd">to be announced</span></dd>
+          </div>
+          <div class="fact" data-reveal>
+            <dt><svg class="icon" aria-hidden="true"><use href="#i-hourglass"/></svg>Course length</dt>
+            <dd><span class="tbd">to be announced</span></dd>
+          </div>
+          <div class="fact" data-reveal>
+            <dt><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Class days</dt>
+            <dd><span class="tbd">to be announced</span></dd>
+          </div>
+          <div class="fact" data-reveal>
+            <dt><svg class="icon" aria-hidden="true"><use href="#i-tag"/></svg>Price</dt>
+            <dd><span class="tbd">to be announced</span></dd>
+          </div>
+
+          <!-- TODO: teacher photo (replace span.teacher__photo with <img class="teacher__photo" src="..." alt="...">), name and a couple of sentences about their experience -->
+          <div class="fact fact--teacher" data-reveal>
+            <dt><svg class="icon" aria-hidden="true"><use href="#i-nib"/></svg>Teacher</dt>
+            <dd class="teacher">
+              <span class="teacher__photo" aria-hidden="true"><svg class="icon"><use href="#i-user"/></svg></span>
+              <span class="teacher__info">
+                <span class="teacher__name"><span class="tbd">name to be announced</span></span>
+                <span class="teacher__bio">Information about the teacher will appear here.</span>
+              </span>
+            </dd>
+          </div>
+        </dl>
+
+        <div class="program-cta" data-reveal>
+          <p>Questions about the programme, or not sure the course is the right fit?</p>
+          <a class="btn btn--ghost" href="#apply" data-interest="consultation">Book a consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="section section--tinted" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-layout">
+        <header class="section-head faq-layout__head" data-reveal>
+          <p class="kicker hand">questions</p>
+          <h2 id="faq-title">Frequently asked questions</h2>
+          <p class="section-head__lead">Didn't find your answer? <a href="#apply" data-interest="consultation">Leave a request</a> and we'll talk it through during a consultation.</p>
+        </header>
+
+        <div class="faq" data-reveal>
+          <details class="faq__item">
+            <summary>
+              <span>Does my child need any writing experience?</span>
+              <svg class="icon faq__icon" aria-hidden="true"><use href="#i-plus"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>No special experience is needed. The course suits both students who already write for themselves and those who want to try it for the first time. What matters is an interest in stories and a willingness to experiment.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              <span>What language are the classes taught in?</span>
+              <svg class="icon faq__icon" aria-hidden="true"><use href="#i-plus"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <!-- TODO: language of instruction and recommended English level -->
+              <p>Language of instruction: <span class="tbd">to be announced</span>.<br>
+                 Recommended English level: <span class="tbd">to be announced</span>.</p>
+              <p>If you're not sure whether your child's language level is a good fit, we can discuss it during a consultation.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              <span>What will a student create during the course?</span>
+              <svg class="icon faq__icon" aria-hidden="true"><use href="#i-plus"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Their own writing: from short exercises and sketches to stories they develop from the first idea to the final edit.</p>
+              <!-- TODO: describe the final outcome of the course (e.g. an anthology, a public reading, a portfolio) -->
+              <p>Final project format: <span class="tbd">to be announced</span>.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              <span>How do I sign up?</span>
+              <svg class="icon faq__icon" aria-hidden="true"><use href="#i-plus"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Fill in the <a href="#apply">request form</a> with your name, your child's age and how you'd like us to get in touch. We'll contact you, answer your questions and suggest a time for a consultation or a trial class.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Request form -->
+    <section class="section section--apply" id="apply" aria-labelledby="apply-title">
+      <div class="container apply">
+        <div class="apply__intro" data-reveal>
+          <p class="kicker hand">sign up</p>
+          <h2 id="apply-title">Book a consultation or a trial class</h2>
+          <p class="section-head__lead">We'll tell you about the course, answer your questions and help you decide whether it's right for your child.</p>
+
+          <ol class="apply__steps">
+            <li><span class="apply__step-num">1</span>Leave a request — it takes a minute.</li>
+            <li><span class="apply__step-num">2</span>We'll get in touch the way you prefer.</li>
+            <li><span class="apply__step-num">3</span>Together we'll arrange a consultation or a trial class.</li>
+          </ol>
+        </div>
+
+        <div class="apply__card" data-reveal>
+          <!--
+            TODO: connect the form to a handler by adding its address as an action attribute,
+            e.g. <form class="apply-form" action="https://formspree.io/f/xxxxxxx" ...>
+            (Formspree, Google Apps Script, a CRM webhook, etc.). See README.md.
+            Without action, the form runs in demo mode and sends nothing.
+          -->
+          <form class="apply-form" method="post" novalidate data-form>
+            <input type="hidden" name="course" value="Creative Writing">
+
+            <fieldset class="field field--choice">
+              <legend class="field__label">What are you interested in?</legend>
+              <div class="chips">
+                <label class="chip">
+                  <input type="radio" name="interest" value="Consultation" data-interest-value="consultation" checked>
+                  <span>Consultation</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="interest" value="Trial class" data-interest-value="trial">
+                  <span>Trial class</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label class="field__label" for="parent-name">Parent's name</label>
+              <input class="field__input" id="parent-name" name="parent_name" type="text" autocomplete="name" placeholder="How should we address you?" required aria-describedby="parent-name-error">
+              <p class="field__error" id="parent-name-error" data-error-for="parent_name"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="student-age">Student's age</label>
+              <input class="field__input" id="student-age" name="student_age" type="number" inputmode="numeric" min="6" max="18" step="1" placeholder="e.g. 12" required aria-describedby="student-age-error">
+              <p class="field__error" id="student-age-error" data-error-for="student_age"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="phone">Phone or WhatsApp</label>
+              <input class="field__input" id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 7XX XXX XX XX" required aria-describedby="phone-error">
+              <p class="field__error" id="phone-error" data-error-for="phone"></p>
+            </div>
+
+            <fieldset class="field field--choice" aria-describedby="contact-error">
+              <legend class="field__label">Preferred way to contact you</legend>
+              <div class="chips">
+                <label class="chip">
+                  <input type="radio" name="contact_method" value="WhatsApp" checked>
+                  <span>WhatsApp</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="contact_method" value="Phone call">
+                  <span>Phone call</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="contact_method" value="Telegram">
+                  <span>Telegram</span>
+                </label>
+              </div>
+              <p class="field__error" id="contact-error" data-error-for="contact_method"></p>
+            </fieldset>
+
+            <!-- Spam trap: hidden from people -->
+            <div class="hp" aria-hidden="true">
+              <label for="website">Leave this field empty</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit" data-submit>
+              <span data-submit-label>Send request</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </button>
+
+            <!-- TODO: add a link to your privacy policy if you have one -->
+            <p class="apply-form__consent">By sending this form, you agree to the processing of your personal data.</p>
+            <p class="apply-form__status" role="status" aria-live="polite" data-form-status></p>
+          </form>
+
+          <div class="apply-success" tabindex="-1" hidden data-form-success>
+            <span class="apply-success__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+            <h3 class="apply-success__title" data-success-title>Thank you!</h3>
+            <p data-success-text>We've received your request and will be in touch to answer your questions and arrange a time.</p>
+            <p class="apply-success__demo" hidden data-success-demo>
+              Demo mode: the form isn't connected to a handler yet, so this request wasn't sent anywhere.
+            </p>
+            <button class="btn btn--ghost btn--sm" type="button" data-form-reset>Send another request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <a class="brand brand--light" href="#top" aria-label="Skill Matrix Creative Writing — back to top">
+          <span class="brand__mark" aria-hidden="true"><svg class="icon"><use href="#i-nib"/></svg></span>
+          <span class="brand__text">
+            <span class="brand__name">Skill Matrix</span>
+            <span class="brand__course">Creative Writing</span>
+          </span>
+        </a>
+        <p>A creative writing course for school students. Almaty.</p>
+      </div>
+
+      <!-- TODO: Skill Matrix contact details -->
+      <dl class="site-footer__contacts">
+        <div>
+          <dt>Phone / WhatsApp</dt>
+          <dd><span class="tbd">to be announced</span></dd>
+        </div>
+        <div>
+          <dt>Address</dt>
+          <dd>Almaty, <span class="tbd">address to be announced</span></dd>
+        </div>
+        <div>
+          <dt>Instagram</dt>
+          <dd><span class="tbd">to be announced</span></dd>
+        </div>
+      </dl>
+
+      <nav class="site-footer__nav" aria-label="Footer">
+        <a href="#program">Programme and schedule</a>
+        <a href="#faq">FAQ</a>
+        <a href="#apply">Sign up</a>
+      </nav>
+
+      <p class="site-footer__copy">© <span data-year>2026</span> Skill Matrix</p>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" data-mobile-cta>
+    <a class="btn btn--primary btn--block" href="#apply" data-interest="trial" tabindex="-1">Book a trial class</a>
+  </div>
+</body>
+</html>
